@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
 name = "omerfitestlib"
-dynamic = ["version"]
+version = "1.0.4"
 description = ''
 readme = "README.md"
 requires-python = ">=3.7"
@@ -30,12 +30,6 @@ dependencies = []
 Documentation = "https://github.com/unknown/omerfitestlib#readme"
 Issues = "https://github.com/unknown/omerfitestlib/issues"
 Source = "https://github.com/unknown/omerfitestlib"
-
-[tool.hatch.version]
-source = "vcs"
-
-[tool.hatch.build.hooks.vcs]
-version-file = "src/omerfitestlib/_version.py"
 
 [tool.hatch.envs.default]
 dependencies = [
